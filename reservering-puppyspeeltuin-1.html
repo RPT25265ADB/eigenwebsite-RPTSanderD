@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+
+</head>
+<body class="inputalles">
+    <h1>reserveringsformulier puppyspeeltuin</h1>
+    <form id="form">
+        <table>
+            <tr>
+                <td>
+                    <p>Je naam (voornaam+achternaam):</p>
+                </td>
+                <td>
+                    <input type="text" id="naam" required> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>jouw e-mail:</p>
+                </td>
+                <td>
+                    <input type="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>gsm-nummer: </p>
+                </td>
+                <td>
+                    <input type="tel" id="telefoonnummer" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>aantal pups:</p>
+                </td>
+                <td>
+                    <input type="number" id="aantalpups" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>adresgegevens: </p>
+                </td>
+                <td>
+                    <textarea id="adresgegevens" rows="2" cols="25"></textarea>
+           
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Komen de pups uit hetzelfde nest:</p>
+
+                </td>
+                <td>        
+                    <p>ja<input type="radio" id="pupsuitzelfenest" value="ja" required></p>
+                </td>
+                <td id="nogmeernaarlinks">
+                    <p>nee<input type="radio" id="pupsuitzelfenest" value="nee" required></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Geboortedatum van de pups:</p>
+                </td>
+                <td>
+                    <input type="date" id="geboortedatumpups" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Ras van de pups:</p>
+                </td>
+                <td>
+                    <input type="text" id="raspups" required>        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>aantal personen: </p>
+                </td>
+                <td>
+                    <input type="number" id="aantalmensen" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Voorkeursdatum:</p>
+                </td>
+                <td>
+                    <input type="date" id="voorkeursdatum" required>        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>voorkeursuur:</p>
+                </td>
+                <td>
+                    <input type="time" id="voorkeursuur" required>        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>extra informatie:</p>
+                </td>
+                <td>
+                    <textarea id="extrainformatie" rows="3" cols="30"></textarea>        
+                </td>
+            </tr>
+        </table>
+        <input type="submit" id="submitknopdingske">
+    <script>
+        const form = document.getElementById('form')
+        const naam = document.getElementById('naam')
+        const email = document.getElementById('email')
+        const telefoonnummer = document.getElementById('telefoonnummer')
+        const aantalpups = document.getElementById('aantalpups')
+        const adresgegevens = document.getElementById('adresgegevens')
+        const pupsuitzelfenest = document.getElementById('pupsuitzelfenest')
+        const geboortedatumpups = document.getElementById('geboortedatumpups')
+        const raspups = document.getElementById('raspups')
+        const aantalmensen=document.getElementById('aantalmensen')
+        const voorkeursdatum = document.getElementById('voorkeursdatum')
+        const voorkeursuur = document.getElementById('voorkeursuur')
+        const extrainformatie = document.getElementById('extrainformatie')
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const naamvalue = naam.value;
+            const emailvalue = email.value;
+            const telefoonnummervalue = telefoonnummer.value;
+            const aantalpupsvalue = aantalpups.value;
+            const adresgegevensvalue = adresgegevens.value;
+            const pupsuitzelfenestvalue = pupsuitzelfenest.value;
+            const geboortedatumpupsvalue = geboortedatumpups.value;
+            const raspupsvalue = raspups.value;
+            const aantalmensenvalue = aantalmensen.value;
+            const voorkeursdatumvalue = voorkeursdatum.value;
+            const voorkeursuurvalue = voorkeursuur.value;
+            const extrainformatievalue = extrainformatie.value;
+            localStorage.setItem('naam',naamvalue);
+            localStorage.setItem('email',emailvalue);
+            localStorage.setItem('telefoonnummer',telefoonnummervalue);
+            localStorage.setItem('aantalpups',aantalpupsvalue);
+            localStorage.setItem('adresgegevens',adresgegevensvalue);
+            localStorage.setItem('pupszelfdenest',pupsuitzelfenestvalue);
+            localStorage.setItem('geboortedatumpups',geboortedatumpupsvalue);
+            localStorage.setItem('raspups',raspupsvalue);
+            localStorage.setItem('aantalmensen',aantalmensenvalue);
+            localStorage.setItem('voorkeurdatum',voorkeursdatumvalue);
+            localStorage.setItem('voorkeuruur',voorkeursuurvalue);
+            localStorage.setItem('extrainfo',extrainformatievalue);
+            window.location.href = "reservering-puppyspeeltuin-2.html";
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+/* https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+dit linkt een ander lettertype (het lettertype dat mijn vader gebruikt op zijn website) zodat
+het kan gebruikt worden op deze website
+*/
+/*@import voor van ergens anders iets te importeren, linkt naar font*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+/*@keyframes -> animatie, from -> van locatie to -> andere locatie*/
+@keyframes identifier {
+    from{margin-left:-196vw;}
+    to{margin-left:-24vw;}
+}
+/*verwijderd de punten*/
+li{
+    list-style:none;
+}
+/*zet het kleur op blauw*/
+.blue{
+    color: blue;
+}
+/*zet het kleur op rood*/
+.red{
+    color:red
+}
+/*identificator voor het lettertype zie google font link*/
+.source-sans-3-text {
+  font-family: "Source-Sans-3-text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+/*zet het kleur voor body in lightcyan, en zet de lettertypes*/
+body{
+    background-color: lightcyan;
+    font-family:'Source Sans 3','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*zet achtergrondkleur naar aliceblue, en maakt plaats onderaan*/
+header{
+    background-color: aliceblue;
+    padding-bottom: 1vh;
+    margin-bottom:-4vh;
+}
+/*zet achtergrond kleur naar floralwhite*/
+main{
+    background-color: floralwhite;
+}
+/*zet de breedte, en andere font instellingen + text in het midden en verwijderd van de top */
+.texttitle{
+    width:80vw;
+    font-optical-sizing:auto;
+    font-weight: 900;
+    font-style:italic;
+    text-align: center;
+    font-size:10vh;
+    margin:0;
+    padding-top: 10vh;
+    padding-bottom:0;
+}
+/*zet de basisgrootte en padding bij fotos in de header*/
+header img{
+    width:1.5vw;
+    padding-right:1vw;
+}
+/*1 van de 4 variaties, rotatie van foto, positie veranderlijk, beweegt beetje naarboven*/
+.dogtraila{
+    rotate:76deg;
+    position:relative;
+    top: 1vh;
+}
+/*2 van de 4 variaties, rotatie van foto, positie veranderlijk, beweegt beetje naar beneden*/
+.dogtrailb{
+    rotate:104deg;
+    position:relative;
+    top: -1vh;
+}
+/*3 van de 4 variaties, rotatie van foto, positie veranderlijk, beweegt beetje naarboven*/
+.dogtrailc{
+    rotate:81deg;
+    position:relative;
+    top: 0.4vh;
+}
+/*4 van de 4 variaties, rotatie van foto, positie veranderlijk, beweegt beetje naar beneden*/
+.dogtraild{
+    rotate:99deg;
+    position:relative;
+    top: -0.4vh;
+}
+/*zet het logo op unieke grootte, en naar links */
+.phototop{
+    width:20vw;
+    height: 25vh;
+    padding-top:2vh;
+    margin-bottom:0;
+    float:left;
+}
+/*zet de padding tussen td van dogtrail*/
+.dogtrail{
+    padding:0.75vw;
+}
+/*maakt dat het mooi in het midden staat + witruimte verwijderen tussen td*/
+.dogtrailtable{
+    margin-left:30vw;
+    margin-right:27.5vw;
+    border-collapse: collapse;
+}
+/*lightgrey achtergrondkleur, links verwijderen, mooi zetten*/
+.navbar{
+    background-color: lightgrey;
+    list-style-type: none;
+    margin-top:2vh;
+    padding:3vh;
+    padding-right: 17.5vw;
+    padding-left:0;
+    overflow:hidden;
+    text-align: center;
+    font-size: 3vh;
+}
+/*maken dat het van rechts komt (makkelijker)*/
+.navbar li{
+    float:right;
+    padding-right:10vw;
+}
+/*zet textkleur, en verwijderd link*/
+.navbar li a{
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+/*zet textkleur*/
+.currentpage{
+    color:rgb(10, 98, 10);
+}
+/*zet border kleuren*/
+main section{
+    border-style: solid;
+    border-color: gray;
+}
+/*zet fotogrootte*/
+#unituitleg img{
+    height:40vh;
+    width:30vw;
+}
+/*zet foto naar links*/
+#legeunit{
+    float:left;
+    margin:0;
+}
+/*zet foto naar rechts*/
+#locatieunit{
+    float:right;
+
+}
+/*zet text groter*/
+#unituitleg h1{
+    font-size: 6vh;
+}
+/*overlapping foto's*/
+#puppyspeeltuin{
+    margin-top:10vh;
+    margin-left:-10vw; 
+    margin-bottom:0;
+}
+/*zet text goed + witruimte + centreren*/
+main h1,p{
+    margin:0;
+    padding:1vh,1vw;
+    text-align: center;
+    line-height:170%;
+    font-size: 2.5vh;
+}
+/*zet fotogrootte en naar rechts + tegen top*/
+#fotoniko1{
+    width:30vw;
+    height:30vw;
+    float:right;
+    margin-top:-4vh;
+}
+/*maakt dat het goed uitkomt*/
+#linken{
+    padding-bottom:27.5vh;
+}
+/*zet de fotogrootte, naar links, met margin + maakt dat het tegen andere elementen botst*/
+#linken img{
+    width:30vw;
+    height:80vh;
+    float:left;
+    margin-right:10vh;
+    clear:both;
+}
+/*maakt link mooier*/
+#linken ul li a{
+    margin-bottom:2vh;
+    text-decoration: none;
+    font-size: 4vh;
+    margin-left:33vw;
+    overflow:auto;
+    display:block;
+}
+/*zet foto beter + verandering hoogte*/
+#linken ul li a img{
+    width:3vw;
+    margin-top:0;
+    height: 3vw ;
+}
+/*zet textkleur*/
+#puppyspeeltuin{
+    color:rgb(45, 182, 45)
+}
+/*zet textkleur*/
+
+#funparkour{
+    color:red;
+}
+/*zet textkleur*/
+#loopband{
+    color:blue;
+}
+/*zet textkleur*/
+#cursussen{
+    color:brown;
+}
+/*zet textkleur*/
+#workshops{
+    color:orange;
+}
+/*zet foto beter*/
+#fotopuppyspeeltuintwee{
+    margin-top:-80vh; 
+    margin-left:67.25vw;
+    float:right;
+}
+/*zet borders + achtergrondkleur*/
+footer table{
+    height:50vh;
+    margin-left:0;
+    border: 0.25vw solid black;
+    border-collapse: collapse;
+    background-color:rgb(208, 250, 208);
+
+}
+/*betere positionering*/
+.contactpunten{
+    padding-left:0.5vw;
+    padding-right:26vw;
+    padding-top:0;
+
+}
+/*zet textgrootte*/
+.contactpunten h1,p{
+    margin:0;
+    padding:0;
+    font-size: 4vh;
+
+}
+/*betere positie*/
+.extrainformatie{
+    padding-right:40vw;
+}
+/*zet textgrootte + betere positionering*/
+.extrainformatie h2{
+    font-size: 4vh;
+    margin-top:-5vh;
+}
+/*zet link mooi + kleur op bruin*/
+.extrainformatie a{
+    text-decoration: none;
+    color:brown;
+    font-size: 4vh;
+    background-color: transparent;}
+/*zet opsommingsteken als vierkant*/
+.extrainformatie ul{
+    list-style-type:square;
+    list-style-position: outside;
+}
+/*zet text (terug) links + textgrootte*/
+.puppyspeeltuin h1{
+    text-align: left;
+    font-size:6vh;
+}
+/*grootte sectie*/
+#nikovoorstelling{
+    height: 100vh;
+}
+/*textgrootte + betere positionering*/
+#nikovoorstelling h1{
+    font-size: 6vh;
+    margin-bottom: -2vh;
+}
+/*textgrootte + links + betere positionering*/
+#nikovoorstelling p{
+    font-size:3vh;
+    text-align: left;
+    margin-left:2vw;
+}
+/*maakt de knop naar inschrijving mooier*/
+button{
+    height:20vh;
+    width:25vw;
+    font-size: 10vh;
+    margin-left:35vw;
+}
+/*zet de grootte van de foto's + mooie afzondering tussen foto's*/
+.scrollbyfotos{
+    width:15vw;
+    height:10vw;
+    border-style:solid;
+    border-width:medium;
+    border-color:gray;
+}
+
+/*zet de grootte op 100% van scherm, en laat de elementen erbuiten onzichtbaar */
+#scrollerdiv{
+  width: 100%;
+    overflow:hidden;    
+    height:20vh;
+}
+/*flex voor beweging, grootte op alle elementen erin(de foto's)
+en maakt dat de animatie 60 seconden duurt, oneindig lang herhaald, en geen
+snelheidsverschil is*/
+#scrolldiv{
+    display:flex;
+    width:max-content;
+    animation-name: identifier;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*ruimte tussenlaten*/
+#puppyspeeltuintext{
+    padding-top:2vh;
+    padding-bottom: 2vh;
+}
+/*zet textgrootte en betere positie*/
+#puppyspeeltuintext p{
+    font-size:3vh;
+    text-align:left;
+    margin-left:5vw;
+    margin-right:10vw;
+}
+/*zet posities goed*/
+.puppyspeeltuink{
+    margin-top:10vh;
+    margin-left:-10vw; 
+    margin-bottom:0;
+
+}
+/*zet textgrootte*/
+.puppyspeeltuink h1{
+    font-size:6vh;
+}

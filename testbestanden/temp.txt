@@ -1,0 +1,7 @@
+                <td><img alt="fotohondenpootjes"src="images/logo4ADOGZ.png"></img>
+.source-sans-3-text {
+  font-family: "Source-Sans-3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}

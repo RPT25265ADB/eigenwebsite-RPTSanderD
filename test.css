@@ -1,0 +1,33 @@
+.verificatie{
+    color: darkgoldenrod;
+    background-color:honeydew;
+}
+.inputalles table{
+    margin-right:auto;
+}
+.inputalles{
+    background-color: #def392;
+    padding-left:5vw;
+}
+h1{
+    padding-right:20vw;
+    text-align:center;
+    padding-left:0;
+}
+#nogmeernaarlinks p{
+    margin-left:-15vw;
+}
+.inputalles table tr td p{
+    margin-right:5vw;
+}
+.verificatie textarea{
+    color:#424d42;
+}
+.verificatie table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.verificatie input{
+    margin-left: auto;
+    margin-right: 10vw;   
+}
