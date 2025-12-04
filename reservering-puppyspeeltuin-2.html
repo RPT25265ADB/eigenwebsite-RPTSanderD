@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body class="verificatie">
+    <h1>is dit de mail die je wilt laten versturen:</h1>
+    <p></p>
+    <form action="https://formsubmit.co/emailsproberensander@gmail.com" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <p><strong>naam: </strong></p>
+                </td>
+                <td>
+                    <textarea name="naam" id="naamertje" rows="1" cols="25" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>emailadres: </strong></p>
+                </td>
+                <td>
+                    <textarea  name="email"  id="emailtje" rows="1" cols="25" readonly></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>bericht: </strong></p>
+                </td>
+                <td>
+                    <textarea  name="bericht"  id="berichtje" rows="12" cols="40" readonly></textarea>
+                </td>
+            </tr>
+        </table>
+        <table
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+    
+    <script>
+        const naame=localStorage.getItem('naam');
+        const emaile=localStorage.getItem('email');
+        const telefoonnummere=localStorage.getItem('telefoonnummer');
+        const aantalpupse=localStorage.getItem('aantalpups');
+        const adresgegevense=localStorage.getItem('adresgegevens');
+        const pupsuitzelfeneste=localStorage.getItem('pupszelfdenest');
+        const geboortedatumpupse=localStorage.getItem('geboortedatumpups');
+        const raspupse=localStorage.getItem('raspups');
+        const aantalmensene=localStorage.getItem('aantalmensen');
+        const voorkeursdatume=localStorage.getItem('voorkeurdatum');
+        const voorkeursuure=localStorage.getItem('voorkeuruur');
+        const extrainformatiee=localStorage.getItem('extrainfo');
+        document.getElementById('naamertje').textContent=naame;
+        document.getElementById('emailtje').value=emaile;
+        var bericht="";
+        bericht+="reservering voor puppyspeeltuin: \n"
+        bericht+="telefoonnummer: " + telefoonnummere.toString() + "\n";
+        bericht+="totaal aantal pups: "+ aantalpupse +"\n";
+        if (!(adresgegevense=="")){
+            bericht+="adres: " + adresgegevense + "\n";
+        }
+        bericht+="zijn de pups uit hetzelfde nest: " + pupsuitzelfeneste +"\n";
+        bericht+="geboortedatum van pups: " + geboortedatumpupse.toString() +"\n";
+        bericht+="ras van de pups: " + raspupse + "\n";
+        bericht+="aanwezigen: " + aantalmensene + "\n"
+        bericht+="voorkeursdatum: " + voorkeursdatume.toString() + "\n";
+        bericht+="voorkeursuur: " + voorkeursuure.toString();
+        if (!(extrainformatiee=="")){
+            bericht+= "\n"+"extra informatie:"+extrainformatiee;
+        }
+        document.getElementById('berichtje').value=bericht;
+    </script>
+</body>
+</html>
